@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-function RegistrationForm(props) {
+import React  from 'react';
+function RegistrationForm (props) {
   return(
         <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
             <form>
@@ -10,6 +10,7 @@ function RegistrationForm(props) {
                        id="email" 
                        aria-describedby="emailHelp" 
                        placeholder="Enter email"
+                     
                 />
                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
@@ -31,11 +32,11 @@ function RegistrationForm(props) {
                 </div>
                 <button 
                     type="submit" 
-                    className="btn btn-primary"
-                >
+                    className="btn btn-primary">
                     Register
                 </button>
             </form>
         </div>
-    )
+  )
 }
+  export  default RegistrationForm;
