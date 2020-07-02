@@ -1,26 +1,31 @@
 
 import Header from './components/Header/Header';
-import React, {useState} from 'react';
+import React from 'react';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import LoginForm from './apps/login/component/login';
+import Dashboard from './apps/dashboard/dashboard';
+import {BrowserRouter as Router, Route , Switch} from 'react-router-dom';
+
+
+
+
 function App() {
 return (
-    <Router>
+ 
+  <Router>
     <div className="App">
+      <switch>
       <Header/>
-        <div className="container d-flex align-items-center flex-column">
-          <Switch>
-            <Route path="/" exact={true}>
-              <RegistrationForm />
-            </Route>
-          </Switch>
-       </div>
+      <Dashboard/>
+      </switch>
+      <Switch>
+      <Route path= "/Login" component={LoginForm}/>
+     <Route path="/Registration" component={RegistrationForm}/>
+     </Switch>
    </div>
-  </Router>
+   </Router>
+
+
   )  
 }
 export default App;
