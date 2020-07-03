@@ -1,10 +1,10 @@
 import React from 'react';
-function Header()
+function Header(props)
 {
     return(
     <nav class = "navbar navbar-dark bg-primary">
         <div className="row col-12 d-flex justify-content-center text-white">
-<span className="h3">Dashboard</span>
+    <span className="h3">{props.title}</span>
 </div>
 </nav>
      

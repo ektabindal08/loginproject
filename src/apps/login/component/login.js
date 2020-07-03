@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import Header from '../../../components/Header/Header';
 //import axios from 'axios';
 // import './LoginForm.css';
 // import {API_BASE_URL} from '../../constants/apiContants';
@@ -54,6 +55,7 @@ export default function LoginForm(props) {
   //     props.updateTitle('Register');
   // }
   return (
+    <div><Header title={"Login"}/>
     <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
       <form>
         <div className="form-group text-left">
@@ -108,5 +110,7 @@ export default function LoginForm(props) {
         </div>
     
     </div>
+    </div>
+  
   );
 }

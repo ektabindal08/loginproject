@@ -1,5 +1,4 @@
 
-import Header from './components/Header/Header';
 import React from 'react';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import LoginForm from './apps/login/component/login';
@@ -14,13 +13,10 @@ return (
  
   <Router>
     <div className="App">
-      <switch>
-      <Header/>
-      <Dashboard/>
-      </switch>
-      <Switch>
-      <Route path= "/Login" component={LoginForm}/>
-     <Route path="/Registration" component={RegistrationForm}/>
+    <Switch>
+      <Route path= "/" exact={true} component={Dashboard}/>
+      <Route path= "/Login" exact={true} component={LoginForm}/>
+     <Route path="/Registration" exact={true} component={RegistrationForm}/>
      </Switch>
    </div>
    </Router>

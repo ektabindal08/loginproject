@@ -66,4 +66,10 @@
      line-break: normal;
 
    }
+   button
+   {
+     display: table-cell;
+     justify-self: center;
+     align-items: center;
+   }
   }

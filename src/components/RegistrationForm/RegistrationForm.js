@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from '../Header/Header';
 export default function RegistrationForm(props) {
   const [state, setState] = useState({
     email: "",
@@ -23,6 +24,8 @@ export default function RegistrationForm(props) {
         }));
     }
     return (
+      <div>
+        <Header title={"Registeration"}/>
       <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
         <form>
           <div className="form-group text-left">
@@ -70,6 +73,7 @@ export default function RegistrationForm(props) {
             Register
           </button>
         </form>
+      </div>
       </div>
     );
   };
